@@ -1,0 +1,28 @@
+<div class="jumbotron" style="background-color:darkgray">
+  <h1 class="display-4" style="margin-left:20px">Bem-vindo ao Blog do Node</h1>
+  <p class="lead" style="margin-left:20px">Este é um BLOG simples, desenvolvido com Node.js + Express + MongoDB.</p>
+  <hr class="my-4" style="margin-left:20px">
+  <p style="margin-left:20px">Aqui você vai poder ler sobre as novidades do mundo dos animes!</p>
+  <p class="lead" style="margin-left:20px">
+  <a class="btn btn-primary btn-lg" href="#" role="button">Crie uma conta</a>
+  </p>
+  <br>
+</div>
+
+<hr>
+<h2>Postagens Recentes INDEX: </h2>
+
+{{# each postagens}}
+<div class="card mt-4">
+    <div class="card-body">
+        <h3>{{titulo}}</h3>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}"><button class="btn btn-success">Leia mais... index</button></a>
+        <hr>
+         <small>Categoria: {{categoria.nome}}</small><br>
+        <small>Data de Publicação: {{data}}</small>
+    </div>
+</div>
+{{else}}
+<h5>Nenhuma Postagem</h5>
+{{/each}}
