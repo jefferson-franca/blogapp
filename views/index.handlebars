@@ -4,20 +4,20 @@
   <hr class="my-4" style="margin-left:20px">
   <p style="margin-left:20px">Aqui você vai poder ler sobre as novidades do mundo dos animes!</p>
   <p class="lead" style="margin-left:20px">
-  <a class="btn btn-primary btn-lg" href="#" role="button">Crie uma conta</a>
+  <a class="btn btn-primary btn-lg" href="/usuarios/registro" role="button">Crie uma conta</a>
   </p>
   <br>
 </div>
 
 <hr>
-<h2>Postagens Recentes INDEX: </h2>
+<h2>Postagens Recentes: </h2>
 
 {{# each postagens}}
 <div class="card mt-4">
     <div class="card-body">
         <h3>{{titulo}}</h3>
         <p>{{descricao}}</p>
-        <a href="/postagem/{{slug}}"><button class="btn btn-success">Leia mais... index</button></a>
+        <a href="/postagem/{{slug}}"><button class="btn btn-success">Leia mais...</button></a>
         <hr>
          <small>Categoria: {{categoria.nome}}</small><br>
         <small>Data de Publicação: {{data}}</small>
