@@ -17,6 +17,8 @@ const passport = require("passport")
 const { application } = require('express')
 require("./config/auth")(passport)
 const db = require("./config/db")
+const handlebars = require("handlebars")
+
 //Configurações
 //Sessão
 app.use(session({
