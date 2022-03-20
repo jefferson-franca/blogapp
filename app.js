@@ -1,5 +1,5 @@
 const express = require('express')
-const {engine} = require('express-handlebars')
+//const {engine} = require('express-handlebars')
 const bodyParser = require('body-parser')
 const app = express()
 const admin = require('./routes/admin')
@@ -17,7 +17,7 @@ const passport = require("passport")
 const { application } = require('express')
 require("./config/auth")(passport)
 const db = require("./config/db")
-const handlebars = require("handlebars")
+const handlebars = require("express-handlebars")
 
 //Configurações
 //Sessão
