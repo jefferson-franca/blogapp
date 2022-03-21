@@ -1,7 +1,12 @@
 <h2>Categorias:</h2>
-<br>
+ <br>
 {{#each categorias}}
 <a href="/categorias/{{slug}}"><h5>{{nome}}</h5></a>
 {{else}}
 Nenhuma Categorias Cadastrada!
 {{/each}}
+<br>
+<br>
+ <div class="col-lg-12" style="text-align: left;">
+    <a class="btn btn-primary btn-lg" href="/admin/categorias" role="button">Cadastrar</a>
+</div>
